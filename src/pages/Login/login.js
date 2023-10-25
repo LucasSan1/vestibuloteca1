@@ -32,7 +32,7 @@ const LoginPage = () => {
             .then((response) =>{
                 const token = response.data.token
                 login(usuario, token)
-                console.log(response)
+                console.log("Logado")
             })
             .catch((erro) => {
                 if(erro.response.status === 404){
