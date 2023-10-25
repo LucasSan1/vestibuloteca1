@@ -16,7 +16,6 @@ const LoginPage = () => {
     // Cria uma função (que recebe um evento) para enviar o usuario e a senha para a api/contexto
     const enviar = (e) => {
         e.preventDefault(); // Intercepta e interrompe a ação padrão do navegador
-        // login(usuario, senha); // Integração com o meu contexto/api
         console.log(login)
 
         const emailValidation = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -32,7 +31,7 @@ const LoginPage = () => {
             })
             .then((response) =>{
                 const token = response.data.token
-                login(usuario, senha, token)
+                login(usuario, token)
                 console.log(response)
             })
             .catch((erro) => {
