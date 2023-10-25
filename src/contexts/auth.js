@@ -12,13 +12,14 @@ export const AuthProvider = ({ children }) => {
     const [carregando, setCarregando] = useState(true);
 
     // Função que recebe o usuario e a senha da página de login e salva esses dados 
-    const login = (usuario, senha, token) => {
+    const login = (usuario, token) => {
         if(usuario === undefined || token === undefined){
             alert("Não autenticado")
         }
         else{
             localStorage.setItem('user', JSON.stringify(usuario));
             localStorage.setItem('token', token);
+            console.log("Logado")
             Navigate("/")
         }
     };
