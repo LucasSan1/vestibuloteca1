@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.removeItem("user");
         localStorage.removeItem("token");
         setUser(null);
-        Navigate("/login");
+        Navigate("/");
     };
 
     // Antes da página ser renderizada, verifica se o usúario ainda esta logado no localStorage  
