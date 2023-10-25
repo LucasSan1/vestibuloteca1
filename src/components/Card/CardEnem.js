@@ -12,7 +12,6 @@ export default function CardEnem(){
         api.get()
         .then((response) => {
             setLivro(response.data)
-            console.log(response.data)
         })
 
         .catch(() => {
