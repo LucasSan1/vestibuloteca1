@@ -1,7 +1,5 @@
 import React, { useState, createContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import  api from '../services/api';
-
 
 // Define o contexto
 export const AuthContext = createContext();
@@ -41,9 +39,7 @@ export const AuthProvider = ({ children }) => {
 
         if (usuarioRecuperado && tokenRecuperado) {
             setUser(JSON.parse(usuarioRecuperado));
-    
         }
-
         setCarregando(false);
     }, []);
 
