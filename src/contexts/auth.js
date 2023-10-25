@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
     const [carregando, setCarregando] = useState(true);
 
     // Função que recebe o usuario e a senha da página de login e salva esses dados 
-    const login = (usuario, token) => {
+    const login = (usuario, senha, token) => {
         if(usuario === undefined || token === undefined){
             alert("Não autenticado")
         }
