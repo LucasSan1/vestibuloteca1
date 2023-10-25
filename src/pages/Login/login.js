@@ -36,6 +36,12 @@ const LoginPage = () => {
                 console.log(response)
             })
             .catch((erro) => {
+                if(erro.response.status === 404){
+                    alert("Usuario não cadastrado")
+                }
+                else if(erro.response.status === 401){
+                    alert("Senha incorreta")
+                }
                 console.log(erro)
             }); 
         }
