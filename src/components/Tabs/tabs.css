@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tabs{
+    width: 100%;
+}
+
+.tabs .tabHeader{
+    float: left;
+}
+
+.tabs .tabHeader .tabItem{
+    text-align: center;
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 15px 15px;
+    cursor: pointer;
+    color: #25252594;
+    background-color: #fff;
+}
+
+.tabs .tabHeader .tabItem:hover{
+    color: #252525;
+}
+
+
+.tabs .tabHeader .tabItem:focus{
+    color: #252525;
+    border-left: solid 3px #591E19;
+    border-right: solid 3px #591E19;
+}
+
+.tabs .tabHeader:focus:after{
+    color: #252525;
+    border-left: solid 3px #591E19;
+    border-right: solid 3px #591E19;
+}
+
+.tabs .tabContent{
+    overflow: hidden;
+    background-color: #d9d9d9;
+    width: 85%;
+    text-align: center;
+    height: max-content;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tabs .tabContent h2{
+    font-size: 1.9rem;
+    margin: 20px;
+}
+
+.tabs .tabContent--selected{
+    display: block;
+}
+
+@media (300px <= width <= 1100px){
+    .tabs .tabHeader{
+        display: flex;
+        flex-direction: row;
+        float: none;
+        
+    }
+
+    .tabs .tabHeader .tabItem:focus{
+        border-left: 0;
+        border-right: 0;
+        border-bottom: solid 3px #591E19;
+        border-top: solid 3px #591E19;
+    }
+
+    .tabs .tabHeader .tabItem:focus:after{
+        border-left: 0;
+        border-right: 0;
+        border-bottom: solid 3px #591E19;
+        border-top: solid 3px #591E19;
+    }
+
+    .tabs .tabContent{
+        width: 100%;
+        border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    }
+}
+
+@media (300px <= width <= 670px) {
+    .tabs .tabHeader{
+        overflow:scroll;
+        overflow-y: hidden;
+    }
+
+}
