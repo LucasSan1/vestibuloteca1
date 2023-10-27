@@ -17,7 +17,7 @@ export default function Home(){
     return (
 
         <div>
-           <button onClick={ deslogar } id='logout'>
+           <button onClick={ deslogar } id='logout'/>
             <img src={ logoutIcon } alt='logout icon'/>
           <div className='imgHome'> <img className='bgImg' src={ biblioteca } alt='imagem biblioteca'/> 
           <div className='infoBox'>
@@ -27,6 +27,7 @@ export default function Home(){
             </Link>
             
           </div>
+        </div>
         
           <section className='slogan'>
             <h1>¶ Vestibuloteca</h1>
