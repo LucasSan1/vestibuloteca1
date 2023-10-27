@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+.card{
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+    max-width: 700px;
+    height: 200px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 6px #00000052;
+}
+
+img{
+    width: 12rem;
+}
+
+.imagem{
+    display: flex;
+    margin: auto auto;
+    border-right: solid 2px #591E19;
+    height: 150px;
+}
+
+.card h1{
+    font-weight: normal;
+    text-align: left;
+    margin: 20px 0px 0px 20px;
+    width: 250px;
+
+}
+
+.infos{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+
+
+.link{
+    border: none;
+    align-self: flex-end;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    background-color: #591E19;
+    box-shadow: 3px 3px 4px #00000052;
+    padding: 5px 20px;
+    border-radius: 5px;
+
+}
+
+.loading::after{
+    content: "";
+    animation: elipse 1.5s infinite;
+}
+
+@keyframes elipse{
+    0%{content: ".";}
+    33%{content: "..";}
+    66%{content: "...";}
+}
+
+@media (421px <= width <= 768px) {
+    .card{
+        flex-direction: row;
+    }
+
+    .card h1{
+        font-size: 1.3rem;
+    } 
+
+    
+}
+
+@media (300px <= width <= 420px){
+    .card h1{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .card{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .imagem{
+        width: auto;
+    }
+
+    .infos{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .link{
+        margin-left: 20px;
+    }
+}
