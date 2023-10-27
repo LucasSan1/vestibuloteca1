@@ -1,6 +1,7 @@
 import biblioteca from '../../img/biblioteca.png'
 import arrow from '../../img/arrow.svg';
 import TabComponent from '../../components/Tabs/Tabs';
+import logoutIcon from '../../img/logout.svg';
 import { Link } from 'react-router-dom'
 import { AuthContext } from "../../contexts/auth";
 import React, { useContext } from "react";
