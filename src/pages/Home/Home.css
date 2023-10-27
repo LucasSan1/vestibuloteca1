@@ -85,7 +85,7 @@
   }
 }
 
-@media (400px <= width <= 699px) {
+@media (300px <= width <= 699px) {
   .infoBox{
     top: 40px;
     left: 20px;
