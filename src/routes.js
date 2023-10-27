@@ -35,7 +35,7 @@ const Rotas = () => {
                         <Route path="/cadastro" element={ <Cadastro/> }/>
                         <Route path="/" element={ <Home/> }/>
                         <Route path="/livro/:livroId" element={ <Private> <Livro/> </Private> }/>
-                        <Route path="/err" element={  <Erro/> }></Route>
+                        <Route path="/*" element={  <Erro/> }></Route>
                         <Route path="/tabs" element={ <Private> <Tabs/> </Private> }></Route>
                     </Routes>
                 </AuthProvider>
