@@ -40,7 +40,7 @@ const CadastrarPage = () => {
                 </div>
                 <div className="acao">
                     <button type="button" onClick={enviar}>Cadastrar-se</button>
-                    <Link to="/login">Logar</Link>
+                    <Link className="btnLogin" to="/login">Logar</Link>
                 </div>
             </form>
         </div>
