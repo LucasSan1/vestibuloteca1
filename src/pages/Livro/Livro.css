@@ -103,6 +103,7 @@ section{
     border-radius: 20px;
     width: auto;
     background-color: transparent;
+    word-wrap: break-word;
 }
 
 .linkCompra:hover{
