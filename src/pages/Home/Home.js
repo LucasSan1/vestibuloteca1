@@ -27,8 +27,7 @@ export default function Home(){
             </Link>
             
           </div>
-          </div>
-    
+        
           <section className='slogan'>
             <h1>¶ Vestibuloteca</h1>
             
